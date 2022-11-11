@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 require('dotenv').config();
-// mongodb://localhost:27017/netflix
+
 mongoose
   .connect(process.env.PORT, {
     useNewUrlParser: true,
